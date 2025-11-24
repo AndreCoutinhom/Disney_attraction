@@ -1,0 +1,63 @@
+<div class="content-container">
+    <h1>Reservas de Hotel</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>E-mail</th>
+          <th>CPF</th>
+          <th>Data do Check-in</th>
+          <th>Data do Check-out</th>
+          <th>Número de hóspedes</th>
+          <th>Número de quartos</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (cliente of listaClientes; track cliente){
+        <tr>
+          <td>{{ cliente.id }}</td>
+          <td>{{ cliente.nome }}</td>
+          <td>{{ cliente.email }}</td>
+          <td>{{ cliente.cpf }}</td>
+          <td>{{ cliente.checkin }}</td>
+          <td>{{ cliente.checkout }}</td>
+          <td>{{ cliente.hospedes }}</td>
+          <td>{{ cliente.quartos }}</td>
+          <td>
+            <button *ngIf="cliente.id" class="btn-editar" [routerLink]="['/alterar', cliente.id]">Editar</button>
+            <button class="btn-excluir" (click)="excluirCliente(cliente.id!)">Excluir</button>
+          </td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <div class="content-container">
+    <h1>Reservas de atrações</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Número de convidados</th>
+          <th>Dia</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (atracoes of listaAtracoes; track atracoes){
+        <tr>
+          <td>{{ atracoes.id }}</td>
+          <td>{{ atracoes.nome }}</td>
+          <td>{{ atracoes.convidados }}</td>
+          <td>{{ atracoes.dia }}</td>
+          <td>
+            <button class="btn-excluir" (click)="excluirAtracao(atracoes.id!)">Excluir</button>
+          </td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+    

@@ -1,0 +1,34 @@
+{
+  "clientes": [
+    {
+      "id": "1",
+      "nome": "André da Silva",
+      "email": "joao.silva@example.com",
+      "telefone": "11999996666",
+      "cpf": "123.456.789-10",
+      "checkin": "2025-03-10",
+      "checkout": "2025-03-15",
+      "hospedes": "2 adultos",
+      "quartos": "1"
+    },
+    {
+      "id": "5",
+      "nome": "João",
+      "email": "resw",
+      "telefone": "11999996666",
+      "cpf": "32",
+      "checkin": "rewr",
+      "checkout": "rewr",
+      "hospedes": "d",
+      "quartos": ""
+    }
+  ],
+  "atracoes": [
+    {
+      "id": "2",
+      "nome": "234",
+      "convidados": "4",
+      "dia": "dfsdf"
+    }
+  ]
+}

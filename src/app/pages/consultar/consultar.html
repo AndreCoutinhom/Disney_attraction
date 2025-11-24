@@ -1,0 +1,57 @@
+<div class="consulta-container">
+    <form (ngSubmit)="buscarCliente()">
+      <label for="input-codigo">Informe o ID da reserva de hotel:</label>
+      <input
+        type="number"
+        id="input-id-cliente"
+        name="input-id-cliente"
+        [(ngModel)]="idBuscaCliente"
+        class="input-id"
+        required
+      />
+      <button type="submit" class="btn-buscar">Buscar</button>
+    </form>
+  
+    <div *ngIf="clienteEncontrado" class="cliente-dados">
+      <h2>Dados da reserva</h2>
+      <p><strong>ID:</strong> {{ clienteEncontrado.id }}</p>
+      <p><strong>Nome:</strong> {{ clienteEncontrado.nome }}</p>
+      <p><strong>E-mail:</strong> {{ clienteEncontrado.email }}</p>
+      <p><strong>CPF:</strong> {{ clienteEncontrado.cpf }}</p>
+      <p><strong>Check-in:</strong> {{ clienteEncontrado.checkin }}</p>
+      <p><strong>Check-out:</strong> {{ clienteEncontrado.checkout }}</p>
+      <p><strong>Número de hóspedes:</strong> {{ clienteEncontrado.hospedes }}</p>
+      <p><strong>Número de quartos:</strong> {{ clienteEncontrado.quartos }}</p>
+    </div>
+  
+    <div *ngIf="erroBuscaCliente" class="erro-busca">
+      {{ erroBuscaCliente }}
+    </div>
+  </div>
+
+  <div class="consulta-container">
+    <form (ngSubmit)="buscarAtracao()">
+      <label for="input-codigo">Informe o ID da reserva de atração:</label>
+      <input
+        type="number"
+        id="input-id-atracao"
+        name="input-id-atracao"
+        [(ngModel)]="idBuscaAtracao"
+        class="input-id"
+        required
+      />
+      <button type="submit" class="btn-buscar">Buscar</button>
+    </form>
+  
+    <div *ngIf="atracaoEncontrada" class="atracao-dados">
+      <h2>Dados da atração</h2>
+      <p><strong>Nome da atração:</strong> {{ atracaoEncontrada.nome }}</p>
+      <p><strong>Número de convidados:</strong> {{ atracaoEncontrada.convidados }}</p>
+      <p><strong>Dia reservado:</strong> {{ atracaoEncontrada.dia }}</p>
+
+    </div>
+  
+    <div *ngIf="erroBuscaAtracao" class="erro-busca">
+      {{ erroBuscaAtracao }}
+    </div>
+  </div>

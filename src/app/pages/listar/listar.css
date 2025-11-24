@@ -1,0 +1,99 @@
+/* Container principal */
+.content-container {
+    width: 100%;
+    display: inline-block;
+    flex-direction: row;
+    margin: 0px auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 16px #eff0fa;
+}
+  
+  /* Estilo geral da tabela */
+  table {
+    margin-top: 1%;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Estilo dos cabeçalhos da tabela */
+  thead tr {
+    background-color: rgb(0, 27, 68);
+    border: 2px solid rgb(255, 187, 0);
+    color: white;
+    font-family: 'Cinzel', serif;
+
+
+  }
+  
+  th, td {
+    padding: 12px 16px;
+    text-align: center; /* Centraliza tanto cabeçalho quanto células */
+    vertical-align: middle; /* Alinha verticalmente ao centro */
+
+  }
+  
+  /* Estilo das linhas do corpo da tabela */
+  tbody tr {
+    background-color: #eff0fa23;
+    border: 0.1px solid #eff0fab0;
+    box-shadow: 0px 2px 16px #eff0fa;
+    backdrop-filter: blur(12px);
+    color: black;
+    font-family: 'Cinzel', serif;
+    transition: background-color 0.5s ease;
+  }
+  
+  tbody tr:hover {
+    background-color: #eff0faad; /* Destaque no hover */
+  }
+  
+  /* Ajuste específico para a coluna de Ações */
+  td:last-child {
+    white-space: nowrap; /* Impede quebra de linha entre botões */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os botões */
+  }
+  
+  /* Estilo base dos botões */
+  td button {
+    min-width: 90px;
+    padding: 8px 14px;
+    background-color: rgb(0, 27, 68);
+    color: rgb(255, 187, 0);
+    font-size: 120%;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  td button:hover {
+  background-color: rgb(255, 187, 0);
+  color: rgb(0, 27, 68);
+  }
+
+td .btn-excluir {
+    min-width: 90px;
+    padding: 8px 14px;
+    background-color: rgb(0, 27, 68);
+    color: rgb(255, 187, 0);
+    font-size: 120%;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+td .btn-excluir:hover {
+    background-color: #c82333;
+}

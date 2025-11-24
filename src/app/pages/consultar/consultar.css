@@ -1,0 +1,91 @@
+.consulta-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #eff0fa23;
+    border-radius: 30px;
+    border: 0.1px solid #eff0fab0;
+    box-shadow: 0px 2px 16px #eff0fa;
+    backdrop-filter: blur(12px);
+    transition: background-color 0.5s ease;
+
+}
+
+.consulta-container:hover {
+    background-color: #eff0faad;
+
+}
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 110%;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    color: black;
+  }
+
+  .input-id {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    color: rgb(0, 43, 107);
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+
+  .input-id:focus {
+  border-color: rgb(255, 187, 0);
+  outline: none;
+}
+  
+  .btn-buscar {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: rgb(0, 27, 68);
+    color: rgb(255, 187, 0);
+    font-size: 120%;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-buscar:hover {
+    background-color: rgb(255, 187, 0);
+    color: rgb(0, 27, 68);
+  }
+  
+  .cliente-dados, .atracao-dados {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 30px;
+    border: 3px solid rgb(0, 27, 68);
+    backdrop-filter: blur(12px);
+    font-family: 'Cinzel', serif;
+    color: black;
+  }
+
+  .seriado-dados, .atracao-dados h2 {
+      color: rgb(0, 27, 68);
+  }
+  
+  .erro-busca {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+  }

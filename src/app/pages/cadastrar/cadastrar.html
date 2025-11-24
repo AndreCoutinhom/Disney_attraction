@@ -1,0 +1,115 @@
+<form>
+  <label for="input-id">ID</label><br />
+  <input
+    class="input-simples"
+    id="input-id"
+    name="input-id"
+    placeholder="Digite o ID"
+    type="text"
+    [(ngModel)]="cliente.id"
+  />
+  <label for="input-nome">Nome</label><br />
+  <input
+    class="input-simples"
+    id="input-nome"
+    name="input-nome"
+    placeholder="Digite o seu nome"
+    type="text"
+    [(ngModel)]="cliente.nome"
+  />
+    <label for="input-email">E-mail</label><br />
+  <input
+    class="input-simples"
+    id="input-email"
+    name="input-email"
+    placeholder="Digite o seu e-mail"
+    type="text"
+    [(ngModel)]="cliente.email"
+  />
+  <label for="input-cpf">CPF</label><br />
+  <input
+    class="input-simples"
+    id="input-cpf"
+    name="input-cpf"
+    placeholder="Digite o número do seu CPF"
+    type="text"
+    [(ngModel)]="cliente.cpf"
+  />
+  <label for="input-checkin">Check-in</label><br />
+  <input
+    class="input-simples"
+    id="input-checkin"
+    name="input-checkin"
+    type="text"
+    [(ngModel)]="cliente.checkin"
+  />
+  <label for="input-checkout">Check-out</label><br />
+  <input
+    class="input-simples"
+    id="input-checkout"
+    name="input-checkout"
+    type="text"
+    [(ngModel)]="cliente.checkout"
+  />
+  <label for="input-hospedes">Número de hóspedes</label><br />
+  <input
+    class="input-simples"
+    id="input-hospedes"
+    name="input-hospedes"
+    type="text"
+    [(ngModel)]="cliente.hospedes"
+  />
+  <label for="input-quartos">Número de quartos</label><br />
+  <input
+    class="input-simples"
+    id="input-quartos"
+    name="input-quartos"
+    type="text"
+    [(ngModel)]="cliente.quartos"
+  />
+  <p>Você deseja reservar o lugar na fila de alguma atração?</p>
+
+        <label>
+            <input type="radio" name="resposta" value="sim">
+            Sim
+        </label>
+
+        <label>
+            <input type="radio" name="resposta" value="nao">
+            Não
+        </label>
+    <label for="input-id">ID da atração</label><br />
+  <input
+    class="input-simples"
+    id="input-id"
+    name="input-id"
+    type="text"
+    [(ngModel)]="atracao.id"
+  />
+    <label for="input-nome">Nome da atração</label><br />
+  <input
+    class="input-simples"
+    id="input-nome"
+    name="input-nome"
+    type="text"
+    [(ngModel)]="atracao.nome"
+  />
+  <label for="input-convidados">Número de convidados</label><br />
+<input
+  class="input-simples"
+  id="input-convidados"
+  name="input-convidados"
+  type="text"
+  [(ngModel)]="atracao.convidados"
+/>
+
+  <label for="input-dia">Dia</label><br />
+  <input
+    class="input-simples"
+    id="input-dia"
+    name="input-dia"
+    type="text"
+    [(ngModel)]="atracao.dia"
+  />
+  <button class="input-submeter" (click)="submeter()">Cadastrar</button>
+</form>

@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url(https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/disney-world/attractions/magic-kingdom/cinderella-castle/castle-rainbow-lt-16x9.jpg?1658978142068);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
