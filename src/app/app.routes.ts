@@ -8,7 +8,7 @@ import { Listar } from './pages/listar/listar';
 
 export const routes: Routes = [
   { path: '', component: Main },
-  { path: 'cadastrar', component: Cadastrar, title:'Cadastrar' },
+  { path: 'cadastrar', component: Cadastrar },
   { path: 'consultar', component: Consultar },
   { path: 'alterar/:id', component: Alterar },
   { path: 'excluir', component: Excluir },

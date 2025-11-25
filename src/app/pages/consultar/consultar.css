@@ -21,6 +21,26 @@
     flex-direction: column;
   }
 
+form .titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form .titulo img {
+  width: 25%;
+  margin-right: 3%;
+}
+
+form .titulo h2 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 210%;
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  color: black;
+}
+
   label {
     display: block;
     margin-top: 15px;

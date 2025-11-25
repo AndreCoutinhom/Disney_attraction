@@ -1,4 +1,10 @@
 <form>
+  <div class="titulo">
+      <h2>Seja nosso convidado em nosso Hotel Resort. Ficaremos muito felizes de receber você!</h2>
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/846a9086-8a40-43e0-aa10-2fc7d6d73730/dazu2l9-5e5d75ff-68a5-493d-9697-b8922e9ed6eb.png/v1/fill/w_631,h_1267/beauty_and_the_beast__lumiere_png_by_mintmovi3_dazu2l9-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjA1NSIsInBhdGgiOiIvZi84NDZhOTA4Ni04YTQwLTQzZTAtYWExMC0yZmM3ZDZkNzM3MzAvZGF6dTJsOS01ZTVkNzVmZi02OGE1LTQ5M2QtOTY5Ny1iODkyMmU5ZWQ2ZWIucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.qWPynP2STjvpdzV_u0lucrvyx6u8ogW1xvW5xBTn5Xw" alt="Lumiere">
+
+    </div>
+
   <label for="input-id">ID</label><br />
   <input
     class="input-simples"
@@ -67,21 +73,20 @@
     type="text"
     [(ngModel)]="cliente.quartos"
   />
-  <p>Você deseja reservar o lugar na fila de alguma atração?</p>
+</form>
 
-        <label>
-            <input type="radio" name="resposta" value="sim">
-            Sim
-        </label>
+  <form>
+    <div class="titulo">
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/fc/Edna_Mode_promotional_image.png" alt="Judy">
+    <h2>Quer entrar numa atração quando quiser amor? Preencha o formulário abaixo:</h2>
 
-        <label>
-            <input type="radio" name="resposta" value="nao">
-            Não
-        </label>
-    <label for="input-id">ID da atração</label><br />
+    </div>
+
+    <label for="input-id">ID de reserva</label><br />
   <input
     class="input-simples"
     id="input-id"
+    placeholder="Coloque o mesmo ID cadastrado no formulário acima"
     name="input-id"
     type="text"
     [(ngModel)]="atracao.id"
@@ -94,7 +99,7 @@
     type="text"
     [(ngModel)]="atracao.nome"
   />
-  <label for="input-convidados">Número de convidados</label><br />
+  <label for="input-convidados">Número de convidados a embarcar</label><br />
 <input
   class="input-simples"
   id="input-convidados"
@@ -103,7 +108,7 @@
   [(ngModel)]="atracao.convidados"
 />
 
-  <label for="input-dia">Dia</label><br />
+  <label for="input-dia">Dia da experiência mágica</label><br />
   <input
     class="input-simples"
     id="input-dia"

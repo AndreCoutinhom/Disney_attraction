@@ -2,33 +2,37 @@
   "clientes": [
     {
       "id": "1",
-      "nome": "André da Silva",
-      "email": "joao.silva@example.com",
-      "telefone": "11999996666",
-      "cpf": "123.456.789-10",
+      "nome": "Ana Silva",
+      "email": "ana.silva@example.com",
+      "cpf": "123.456.789-00",
       "checkin": "2025-03-10",
       "checkout": "2025-03-15",
-      "hospedes": "2 adultos",
+      "hospedes": "2",
       "quartos": "1"
     },
     {
-      "id": "5",
-      "nome": "João",
-      "email": "resw",
-      "telefone": "11999996666",
-      "cpf": "32",
-      "checkin": "rewr",
-      "checkout": "rewr",
-      "hospedes": "d",
-      "quartos": ""
+      "id": "2",
+      "nome": "Bruno Souza",
+      "email": "bruno.souza@example.com",
+      "cpf": "987.654.321-00",
+      "checkin": "2025-04-02",
+      "checkout": "2025-04-05",
+      "hospedes": "3",
+      "quartos": "2"
     }
   ],
   "atracoes": [
     {
-      "id": "2",
-      "nome": "234",
+      "id": "1",
+      "nome": "Space Mountain",
       "convidados": "4",
-      "dia": "dfsdf"
+      "dia": "2025-03-12"
+    },
+    {
+      "id": "2",
+      "nome": "Pirates of the Caribbean",
+      "convidados": "3",
+      "dia": "2025-03-13"
     }
   ]
 }
